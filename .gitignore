@@ -70,3 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+/ProjectSettings/RiderScriptEditorPersistedState.asset
+/UserSettings/Layouts/
+/UserSettings/EditorUserSettings.asset
+/build
+/UserSettings/AndroidLogcatSettings.asset
+/Assets/AddressableAssetsData/Android/addressables_content_state.bin
+/Assets/AddressableAssetsData/link.xml
+/Assets/AddressableAssetsData/link.xml.meta
+/Assets/AddressableAssetsData/Android/addressables_content_state.bin.meta
+/UserSettings/
