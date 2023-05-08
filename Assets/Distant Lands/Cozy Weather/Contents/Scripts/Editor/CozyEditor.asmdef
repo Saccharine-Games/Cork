@@ -1,0 +1,19 @@
+{
+    "name": "CozyEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ae0ec64650a43934e8a84be9019b4fd7",
+        "GUID:d60799ab2a985554ea1a39cd38695018"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
