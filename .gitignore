@@ -81,3 +81,7 @@ crashlytics-build.properties
 /Assets/AddressableAssetsData/link.xml.meta
 /Assets/AddressableAssetsData/Android/addressables_content_state.bin.meta
 /UserSettings/
+
+# Ignore temporaries from GameCI
+/[Aa]rtifacts/
+/[Cc]odeCoverage/
