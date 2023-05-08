@@ -17,7 +17,7 @@ MonoBehaviour:
   snowColor: {r: 1, g: 1, b: 1, a: 1}
   puddleScale: 2
   modulatedValues:
-  - expanded: 0
+  - expanded: 1
     modulationSource: 1
     modulationTarget: 0
     mappedGradient:
@@ -47,6 +47,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 7
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -106,6 +107,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 4
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -165,6 +167,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 7
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -224,6 +227,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 7
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -283,6 +287,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 7
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -342,6 +347,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 6
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -401,6 +407,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
     mappedCurve:
@@ -460,6 +467,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
     mappedCurve:
