@@ -363,5 +363,41 @@ MonoBehaviour:
     recalculate: 0
     min: 0
     max: 56.094604
-  m_bakedMaskCacheEntries: []
+  m_bakedMaskCacheEntries:
+  - fileName: Terrain_0_0-20230508 - 025403_LayerGameObject_3584_12
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_12
+    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_12
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230508 - 025403_LayerTree_3584_0
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerTree_3584_0
+    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerTree_3584_0
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230508 - 025403_LayerGameObject_3584_5
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_5
+    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_5
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230508 - 025403_RadiusTag_Synty Small Farm_50
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Small Farm_50
+    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Small Farm_50
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230508 - 025403_RadiusTag_Synty Medium Farm_100
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Medium Farm_100
+    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Medium Farm_100
+    texture: {fileID: 0}
+  - fileName: Terrain_0_0-20230508 - 025403_LayerGameObject_3584_0.5
+    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_0.5
+    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
+      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_0.5
+    texture: {fileID: 0}
   m_worldBiomeMaskSettings: {fileID: 0}
