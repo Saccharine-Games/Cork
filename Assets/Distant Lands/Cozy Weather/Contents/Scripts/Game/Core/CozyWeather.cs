@@ -410,6 +410,8 @@ namespace DistantLands.Cozy
             public float currentTicks;
             [FormatTime]
             public MeridiemTime meridiemTime;
+
+            [FormatTime] public MeridiemTime passOutTime;
             public int currentDay;
             public int currentYear;
 
@@ -1942,6 +1944,13 @@ namespace DistantLands.Cozy
 
         }
 
+        public void SkipToTime(MeridiemTime timeToSkipTo)
+        {
+            var ticks = MeridiemTime.MeridiemTimeToDeyPercent(timeToSkipTo)*perennialProfile.ticksPerDay;
+            Debug.Log(ticks);
+            SkipTime(ticks);
+        }
+        
         public void SkipTime(float ticksToSkip, int daysToSkip)
         {
 
@@ -2184,7 +2193,7 @@ namespace DistantLands.Cozy
 
 
     [System.Serializable]
-    public class MeridiemTime
+    public class MeridiemTime : IEquatable<MeridiemTime>
     {
 
         public int hours;
@@ -2249,6 +2258,10 @@ namespace DistantLands.Cozy
 
         }
 
+        public bool Equals(MeridiemTime other)
+        {
+            return meridiem == other.meridiem && hours == other.hours && minutes == other.minutes;
+        }
     }
 
 
@@ -2931,13 +2944,16 @@ namespace DistantLands.Cozy
                     if (EditorGUI.EndChangeCheck())
                     {
 
-                        calendar.FindPropertyRelative("currentTicks").floatValue = t.perennialProfile.ticksPerDay * MeridiemTime.MeridiemTimeToDeyPercent(
+                        calendar.FindPropertyRelative("currentTicks").floatValue = t.perennialProfile.ticksPerDay *
+                            MeridiemTime.MeridiemTimeToDeyPercent(
                         calendar.FindPropertyRelative("meridiemTime").FindPropertyRelative("hours").intValue,
                         calendar.FindPropertyRelative("meridiemTime").FindPropertyRelative("minutes").intValue,
                         (MeridiemTime.Meridiem)calendar.FindPropertyRelative("meridiemTime").FindPropertyRelative("meridiem").intValue);
 
 
                     }
+                    EditorGUILayout.PropertyField(calendar.FindPropertyRelative("passOutTime"));
+
                     calendar.FindPropertyRelative("currentDay").intValue = EditorGUILayout.IntSlider("Current Day", calendar.FindPropertyRelative("currentDay").intValue, 0, perennial.daysPerYear);
                     calendar.FindPropertyRelative("currentYear").intValue = EditorGUILayout.IntField("Current Year", calendar.FindPropertyRelative("currentYear").intValue);
 
