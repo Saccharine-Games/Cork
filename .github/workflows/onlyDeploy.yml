@@ -1,0 +1,21 @@
+﻿name: Only_Deploy_No_Build
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  DeployWindows:
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
+    with:
+      platform: StandaloneWindows64
+      channel: windows
+  DeployLinux:
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
+    with:
+      platform: StandaloneLinux64
+      channel: linux
