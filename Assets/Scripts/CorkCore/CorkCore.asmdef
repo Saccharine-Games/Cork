@@ -1,0 +1,16 @@
+{
+    "name": "CorkCore",
+    "rootNamespace": "",
+    "references": [
+        "GUID:091b49152f9e602429969ce99b8eedd3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

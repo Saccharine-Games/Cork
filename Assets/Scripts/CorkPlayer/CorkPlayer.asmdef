@@ -1,0 +1,16 @@
+{
+    "name": "CorkPlayer",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ae0ec64650a43934e8a84be9019b4fd7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
