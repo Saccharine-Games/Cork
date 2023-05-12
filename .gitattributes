@@ -1,0 +1,2 @@
+StandaloneWindows64/Build-StandaloneWindows64.zip filter=lfs diff=lfs merge=lfs -text
+StandaloneLinux64/Build-StandaloneLinux64.zip filter=lfs diff=lfs merge=lfs -text

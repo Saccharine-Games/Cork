@@ -25,7 +25,7 @@ UNITY_EXIT_CODE=$?
 if [ $UNITY_EXIT_CODE -eq 0 ]; then
   echo "Run succeeded, no failures occurred";
   echo "Zipping..."
-  zip -r Build-$BUILD_TARGET.zip ./Builds/$BUILD_TARGET
+  zip -r ./$BUILD_TARGET/Build-$BUILD_TARGET.zip ./Builds/$BUILD_TARGET
 elif [ $UNITY_EXIT_CODE -eq 2 ]; then
   echo "Run succeeded, some tests failed";
 elif [ $UNITY_EXIT_CODE -eq 3 ]; then

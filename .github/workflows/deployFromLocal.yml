@@ -1,0 +1,22 @@
+name: Deploy Local Build to Itch.io
+
+on: 
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: manleydev/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.ITCH_KEY }}
+          CHANNEL: windows
+          ITCH_GAME: ${{ secrets.ITCH_GAME }}
+          ITCH_USER: ${{ secrets.ITCH_USER }}
+          PACKAGE: StandaloneWindows64/
