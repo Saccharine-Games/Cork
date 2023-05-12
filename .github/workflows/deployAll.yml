@@ -13,5 +13,6 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
   call-deploy:
+    needs: call-build
     uses: ./.github/workflows/onlyDeploy.yml
     secrets: inherit
