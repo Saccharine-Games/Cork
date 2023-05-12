@@ -19,15 +19,10 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - uses: dawidd6/action-download-artifact@v2
-        with:
-          name: Build-${{ inputs.platform }}
-          path: build/${{ inputs.platform }}
-          workflow: main.yml
       - uses: manleydev/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.ITCH_KEY }}
           CHANNEL: ${{ inputs.channel }}
           ITCH_GAME: ${{ secrets.ITCH_GAME }}
           ITCH_USER: ${{ secrets.ITCH_USER }}
-          PACKAGE: build/${{ inputs.platform }}
+          PACKAGE: ${{ inputs.platform }}
