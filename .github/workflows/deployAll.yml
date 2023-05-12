@@ -12,21 +12,6 @@ jobs:
   call-build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
-  deployToItch:
-    needs: call-build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Deploy StandaloneWindows
-        uses: ./.github/workflows/deploy.yml
-        with:
-          platform: StandaloneWindows64
-          channel: windows
-      - name: Deploy StandaloneLinux
-        uses: ./.github/workflows/deploy.yml
-        with:
-          platform: StandaloneLinux64
-          channel: linux
+  call-deploy:
+    uses: ./.github/workflows/onlyDeploy.yml
+    secrets: inherit
