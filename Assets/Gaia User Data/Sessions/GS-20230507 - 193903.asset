@@ -302,102 +302,126 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: 'Updating World To: 1 x 1 tiles, tile size: 1024'
+    m_operationType: 14
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 2023-05-21 5:01:12 PM
+    scriptableObjectAssetGUID: 0ff26a6455179b64fa9b29fbfb9a0efb
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (4)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:01:46 PM
+    scriptableObjectAssetGUID: 6e04245eff0ba6549b6aebf44bbe26a2
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Mountain 4
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:10:16 PM
+    scriptableObjectAssetGUID: 0fe01157c2f91e14385f36ad77823338
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:10:17 PM
+    scriptableObjectAssetGUID: ff26fdc967b89a743be4ed45eafaf8b6
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:13:41 PM
+    scriptableObjectAssetGUID: ac441639fd3d06c46ae58b502516a572
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Redo - 1 Terrains
+    m_operationType: 6
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:13:43 PM
+    scriptableObjectAssetGUID: 018a2051b995e0945b5c0bdbe22f8721
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: MixHeight - 2k River 5
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:14:15 PM
+    scriptableObjectAssetGUID: c3cc92c6499f2aa49b0f312bc196fa06
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:14:16 PM
+    scriptableObjectAssetGUID: 7d6bcd1f79096fb478f511774fb517bd
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clearing - Trees Details GOs SpawnExt Probes, CurrentTerrainOnly,
+      AnySource
+    m_operationType: 3
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:15:02 PM
+    scriptableObjectAssetGUID: 875807a145621254799b0935dd5a9b57
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (4)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230508 - 025403
+    m_operationDateTime: 2023-05-21 5:15:26 PM
+    scriptableObjectAssetGUID: 6c306702c99194248abbcc33bfa6e609
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
-  - guid: 6d6fd7f8d0341cc4ea13b75a9995df4f
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 59.313404
-  - guid: e22cca9d76691c344b3f75abfa7c6cd2
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 59.313404
-  - guid: 07eafdd208e3ed940a311e67e4cb728b
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 59.313404
-  - guid: ef563e5979be2964b9f711d7569e92a7
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 59.313404
-  - guid: f318a677567b07e40a1082ddcac4e93b
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 37.21932
-  - guid: a09cf6ab2904bb34abf9a579dadb04a6
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 38.250584
-  - guid: 84d44e4001435af4f972a29617e50184
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 34.906784
-  - guid: 73b86a56130c4bc4195a107d47ce2a7b
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 40.06311
-  - guid: 50bafefd9134ea749829a45de2084683
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 56.094604
-  - guid: 06e7b3477c4175e448ad7ec76f595f3c
-    isWorldmap: 0
-    recalculate: 0
-    min: 0
-    max: 112.18921
   - guid: c05a7d78d1b9f004c97d476f6f893485
     isWorldmap: 0
     recalculate: 0
     min: 0
-    max: 56.094604
+    max: 83.070114
   - guid: Worldmap
     isWorldmap: 1
     recalculate: 0
     min: 0
     max: 0
-  m_bakedMaskCacheEntries:
-  - fileName: Terrain_0_0-20230508 - 025403_LayerGameObject_3584_12
-    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_12
-    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_12
-    texture: {fileID: 0}
-  - fileName: Terrain_0_0-20230508 - 025403_LayerTree_3584_0
-    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerTree_3584_0
-    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerTree_3584_0
-    texture: {fileID: 0}
-  - fileName: Terrain_0_0-20230508 - 025403_LayerGameObject_3584_5
-    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_5
-    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_5
-    texture: {fileID: 0}
-  - fileName: Terrain_0_0-20230508 - 025403_RadiusTag_Synty Small Farm_50
-    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Small Farm_50
-    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Small Farm_50
-    texture: {fileID: 0}
-  - fileName: Terrain_0_0-20230508 - 025403_RadiusTag_Synty Medium Farm_100
-    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Medium Farm_100
-    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_RadiusTag_Synty Medium Farm_100
-    texture: {fileID: 0}
-  - fileName: Terrain_0_0-20230508 - 025403_LayerGameObject_3584_0.5
-    assetPath: Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_0.5
-    fullPath: D:/Repos/Cork/Assets/Procedural Worlds/Gaia/TerrainCollisionData/Terrain_0_0-20230508
-      - 025403/Terrain_0_0-20230508 - 025403_LayerGameObject_3584_0.5
-    texture: {fileID: 0}
+  m_bakedMaskCacheEntries: []
   m_worldBiomeMaskSettings: {fileID: 0}
