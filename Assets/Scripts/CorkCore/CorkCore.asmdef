@@ -2,7 +2,8 @@
     "name": "CorkCore",
     "rootNamespace": "",
     "references": [
-        "GUID:091b49152f9e602429969ce99b8eedd3"
+        "GUID:091b49152f9e602429969ce99b8eedd3",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
