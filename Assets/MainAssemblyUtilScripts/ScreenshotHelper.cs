@@ -19,6 +19,8 @@ public class ScreenshotHelper : MonoBehaviour
     public static void TakeScreenshot()
     {
         ScreenCapture.CaptureScreenshot("test.png");
+#if UNITY_EDITOR
         AssetDatabase.Refresh();
+#endif
     }
 }
