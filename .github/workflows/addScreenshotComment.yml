@@ -1,4 +1,4 @@
-﻿name: Add Screenshot Comment
+name: Add Screenshot Comment
 
 on:
   pull_request:
@@ -30,9 +30,14 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.rest.issues.createComment({
-              issue_number: process.env.PR_NUMBER,
+            const fs = require('fs');
+            const screenshotPath = '${{ steps.find-screenshot.outputs.screenshot_path }}';
+            const screenshotData = fs.readFileSync(screenshotPath, { encoding: 'base64' });
+            const commentBody = '![Screenshot](data:image/png;base64,' + screenshotData + ')';
+      
+            github.pulls.createReviewComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body:  '![Screenshot](data:image/png;base64,' + screenshotData + ')'
-            })
+              pull_number: context.payload.pull_request.number,
+             body: commentBody
+            });
