@@ -30,17 +30,9 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const fs = require('fs');
-            const screenshotPath = '${{ steps.find-screenshot.outputs.screenshot_path }}';
-            const screenshotData = fs.readFileSync(screenshotPath, { encoding: 'base64' });
-            const octokit = context.octokit;
-            const owner = context.payload.repository.owner.login;
-            const repo = context.payload.repository.name;
-            const pullRequestNumber = context.payload.pull_request.number;
-            
-            octokit.issues.createComment({
-              owner,
-              repo,
-              issue_number: pullRequestNumber,
-              body: '![Screenshot](data:image/png;base64,' + screenshotData + ')'
-            });
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Thanks for reporting!'
+            })
