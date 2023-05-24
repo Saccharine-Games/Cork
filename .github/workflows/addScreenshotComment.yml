@@ -24,20 +24,39 @@ jobs:
             echo "No screenshot found."
           fi
           
-      - name: Add Comment with Screenshot
+      - name: Read Screenshot Data
         if: steps.find-screenshot.outputs.screenshot_path
+        id: read-screenshot
+        run: |
+          const fs = require('fs');
+          const screenshotPath = '${{ steps.find-screenshot.outputs.screenshot_path }}';
+          const screenshotData = fs.readFileSync(screenshotPath, { encoding: 'base64' });
+          echo "::set-output name=screenshot_data::$screenshotData"
+
+      - name: Get PR Description
+        id: get-pr-description
+        run: |
+          pr_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+          pr_description=$(curl --request GET \
+            --url "https://api.github.com/repos/${{ github.repository }}/pulls/${pr_number}" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            --header "Accept: application/vnd.github.v3+json" \
+            | jq --raw-output .body)
+          echo "::set-output name=pr_description::$pr_description"
+
+      - name: Update PR Description
+        id: update-pr-description
         uses: actions/github-script@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const fs = require('fs');
-            const screenshotPath = '${{ steps.find-screenshot.outputs.screenshot_path }}';
-            const screenshotData = fs.readFileSync(screenshotPath, { encoding: 'base64' });
-            const commentBody = '![Screenshot](data:image/png;base64,' + screenshotData + ')';
-      
-            github.pulls.createReviewComment({
+            const screenshotData = '${{ steps.read-screenshot.outputs.screenshot_data }}';
+            const prDescription = '${{ steps.get-pr-description.outputs.pr_description }}';
+            const updatedDescription = `${prDescription}\n\n![Screenshot](data:image/png;base64,${screenshotData})`;
+
+            github.rest.pulls.update({
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.payload.pull_request.number,
-             body: commentBody
+              body: updatedDescription
             });
